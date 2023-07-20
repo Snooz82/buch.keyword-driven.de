@@ -20,6 +20,7 @@
     "robotcode.debug.outputMessages": false,
     "robotcode.debug.groupOutput": false,
     "robotcode.robocop.enabled": false,
+    "robotcode.run.openOutputAfterRun": "log",
     "redhat.telemetry.enabled": false,
     "workbench.colorTheme": "Default Dark+",
     "gitpod.openInStable.neverPrompt": true,

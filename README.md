@@ -1,11 +1,73 @@
-# robocon-de-tutorial
-GitPod Repository for RoboCon Tutorial Session
+# Beispiele aus dem Buch "Keyword-Driven Testing"
+(Matthias Daigl & René Rohner)
 
+In diesem GitHub-Repository finden Sie exemplarische Testfälle des Robot Frameworks, die Sie selbst ausprobieren können.
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Snooz82/buch.keyword-driven.de)
+Das Projekt ist so konzipiert, dass Sie die Tests ohne vorherige Installation des Robot Frameworks oder Python auf Ihrem Computer problemlos online durchführen können.
 
+Für diese Zwecke nutzen wir Gitpod.io, eine cloudbasierte Entwicklungsumgebung, die Sie per Knopfdruck erstellen und anschließend verwerfen können.
 
-## Links ##
+Die einzige Voraussetzung hierfür ist ein GitHub-Konto. Mit Ihrem GitHub-Konto können Sie Gitpod.io für 50 Stunden pro Monat kostenfrei nutzen.
+
+## Beispiele
+
+Im Ordner "Beispiele" finden Sie Test-Suiten des Robot Frameworks, die von sehr einfachen bis hin zu strukturierten Testsuiten auf Deutsch mit realen Webtests zeigen, wie das Robot Framework in der Praxis funktioniert.
+
+## Nutzung von Gitpod.io
+
+Wenn Sie dieses Projekt in Gitpod öffnen, werden Sie zunächst dazu aufgefordert, sich mit Ihrem GitHub-Konto zu authentifizieren. Anschließend wählen Sie die Konfiguration der Umgebung aus. Üblicherweise können Sie die Standardeinstellungen beibehalten.
+
+[![In Gitpod öffnen](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Snooz82/buch.keyword-driven.de)
+
+### Start der Umgebung und Installation der Pakete
+
+Die Umgebung wird in einem Container in der Cloud initialisiert und Sie erhalten Zugriff über Ihren Browser.
+
+Bitte warten Sie, bis die Initialisierung vollständig abgeschlossen ist.
+
+**!! Es werden keine Daten auf Ihrem Computer gespeichert!!**
+
+| ![GitPod startet](img/loadingGitpod.png) |
+|:-:|
+| Gitpod wird geladen. |
+
+| ![GitPod ist gestartet](img/startedGitPod.png) |
+| :-: |
+| Gitpod ist fertig initialisiert |
+
+## Ausführung von Tests und Öffnen der VNC-Sitzung
+
+In der geladenen Visual Studio Code-Umgebung können Sie einerseits im "Explorer"-Reiter (📄 Symbol links) die Robot Framework-Dateien öffnen und die Tests über den Play-Button in der Suite starten, oder im "Testing"-Reiter (Reagenzglas-Symbol links) alle Tests sehen.
+
+| ![GitPod ist gestartet](img/startedGitPod.png) |
+| :-: |
+| Gitpod ist fertig initialisiert |
+
+Unten haben Sie im "Terminal"-Reiter Zugriff auf die Kommandozeile des Linux-Systems.
+
+Im "Ports"-Reiter können Sie durch Klicken auf die Weltkugel in der Zeile des Ports 6080 in einem neuen Browser-Tab auf den Desktop zugreifen und den automatisierten Browser dort sehen.
+
+Nach Ausführung der Tests wird automatisch die log.html in VSCode geöffnet.
+
+## Lokale Installation
+
+Um alle Tests durchführen zu können, benötigen Sie Python 3.8 oder neuer sowie NodeJS 16 oder neuer.
+
+### Installation
+
+Installieren Sie alle benötigten bzw. empfohlenen Pakete mit den folgenden Befehlen im Projektordner:
+
+    pip install -U -r requirements.txt
+
+Initialisieren Sie anschließend die [Browser-Bibliothek](https://robotframework-browser.org):
+
+    rfbrowser init
+
+Jetzt sollten Sie startklar sein.
+
+Wir empfehlen die Nutzung von [Visual Studio Code](https://code.visualstudio.com) und des Plugins [Robot Code](https://github.com/d-biehl/robotcode).
+
+# Links aus dem Buch
 
 * [RobotCode by Daniel Biehl.](https://github.com/d-biehl/robotcode)
 * [Trends in Testing 2010 - Testautomatisierung out-of-the-box! Vortrag 2: TA-Architektur.](https://www.imbus.de/downloads)
