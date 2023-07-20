@@ -1,0 +1,32 @@
+
+tasks:
+  - name: prepare
+    before: |
+      sudo cp -f /workspace/robocon-de-tutorial/.vscode/RBCN-DE.png /usr/share/backgrounds/xfce/xfce-stripes.png
+      clear
+  - name: install System
+    init: |
+      python -m pip install --upgrade pip
+      pip install -r requirements.txt
+      pip install --upgrade --pre robotframework
+      rfbrowser init
+      npx --yes playwright install-deps
+  - name: Command
+    command: |
+      sudo cp -f /workspace/robocon-de-tutorial/.vscode/RBCN-DE.png /usr/share/backgrounds/xfce/xfce-stripes.png
+      clear
+image: gitpod/workspace-full-vnc
+ports:
+  - port: 6080
+    onOpen: open-preview
+    visibility: private
+vscode:
+  extensions:
+    - ms-python.python
+    - d-biehl.robotcode
+    - bierner.docs-view
+    - ms-toolsai.jupyter
+    - ms-toolsai.jupyter-keymap
+    - ms-toolsai.jupyter-renderers
+    - PKief.material-icon-theme
+    - mechatroner.rainbow-csv
