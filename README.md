@@ -2,7 +2,7 @@
 GitPod Repository for RoboCon Tutorial Session
 
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/imbus/robocon-de-tutorial)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Snooz82/buch.keyword-driven.de)
 
 
 ## Links ##
